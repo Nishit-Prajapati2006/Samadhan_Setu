@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <!-- Common Colors -->
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Light Theme Colors (Example Palette) -->
+    <color name="light_primary">#6200EE</color> <!-- A nice purple for the app bar -->
+    <color name="light_primary_variant">#3700B3</color> <!-- A darker shade for the status bar -->
+    <color name="light_on_primary">#FFFFFF</color> <!-- Text/icons on the primary color (e.g., toolbar title) -->
+    <color name="light_surface">#FFFFFF</color> <!-- Background color for cards, sheets -->
+    <color name="light_background">#F4F6F9</color> <!-- Main background color of your app -->
+    <color name="light_on_surface">#000000</color> <!-- Text color on surfaces -->
+    <color name="light_on_background">#000000</color> <!-- Text color on the main background -->
+
+    <!-- Dark Theme Colors (Example Palette) -->
+    <color name="dark_primary">#BB86FC</color> <!-- A lighter purple for dark mode app bar -->
+    <color name="dark_primary_variant">#3700B3</color> <!-- Can be the same or a different dark shade -->
+    <color name="dark_on_primary">#000000</color> <!-- Text/icons on the dark primary color -->
+    <color name="dark_surface">#1F1F23</color> <!-- A dark grey for cards (not pure black) -->
+    <color name="dark_background">#121212</color> <!-- The main background color for dark mode -->
+    <color name="dark_on_surface">#FFFFFF</color> <!-- Text color on dark surfaces -->
+    <color name="dark_on_background">#FFFFFF</color> <!-- Text color on the dark main background -->
 </resources>

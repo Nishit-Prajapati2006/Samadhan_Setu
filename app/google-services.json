@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47739128566",
+    "project_id": "samadhansetu-135",
+    "storage_bucket": "samadhansetu-135.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47739128566:android:6468ff0d00ae401abcbad7",
+        "android_client_info": {
+          "package_name": "com.example.samadhansetu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw5OrAyjEaTH2E7xeKL9-WhV1xTcc20NY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
