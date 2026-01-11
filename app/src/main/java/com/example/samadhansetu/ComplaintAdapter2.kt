@@ -10,6 +10,7 @@ import com.example.samadhansetu.databinding.ItemComplaintAllotedBinding
 import com.example.samadhansetu.databinding.ItemComplaintBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.collection.LLRBNode.Color
 
 class ComplaintAdapter2(private val complaints: MutableList<AllComplaint>) :
 
@@ -60,6 +61,13 @@ class ComplaintAdapter2(private val complaints: MutableList<AllComplaint>) :
         fun bind(complaint: AllComplaint) {
             binding.tvComplaintTitle.text = complaint.title
             binding.tvStudentDetails.text = "from ${complaint.name} (Room ${complaint.roomNo}, ${complaint.regNo})"
+            binding.badgeStatusAlloted.text=complaint.state
+            if(complaint.state=="Allotted"){
+                binding.badgeStatusAlloted.setBackgroundResource(R.drawable.alloted_bg)
+            }
+            else if(complaint.state=="pending"){
+                binding.badgeStatusAlloted.setBackgroundResource(R.drawable.pending_bg)
+            }
 
 
             // You can add an OnClickListener here to handle item clicks

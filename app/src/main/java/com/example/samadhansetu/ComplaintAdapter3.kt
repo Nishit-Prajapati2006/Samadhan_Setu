@@ -30,6 +30,7 @@ class ComplaintAdapter3(private val complaints: List<AllComplaint>) :
             binding.tvComplaintTitle.text = complaint.title
             val studentDetails = "From: ${complaint.name} (Room ${complaint.roomNo}, ${complaint.regNo})"
             binding.tvStudentDetails.text = studentDetails
+            binding.badgeStatusSolved.text=complaint.state.toString()
 
             // 4. Fetch worker details for THIS specific complaint.
             // This logic MUST be inside `bind` to get the correct worker for each item.

@@ -78,11 +78,12 @@ class ItemComplaintAllotedActivity : AppCompatActivity() {
                     for (complaintSnapshot in snapshot.children) {
                         val complaint = complaintSnapshot.getValue(AllComplaint::class.java)
                         // Check if the complaint status is "Alloted"
-                        if (complaint != null && complaint.state.equals("Allotted", ignoreCase = true)) {
+                        if (complaint != null && (complaint.state.equals("Allotted", ignoreCase = true)|| complaint.state.equals("pending", ignoreCase = true))) {
                             complaint.complaintId = complaintSnapshot.key // Store the Firebase key
                             allotedComplaintsList.add(complaint)
                         }
                     }
+
                 }
 
                 if (allotedComplaintsList.isEmpty()) {
