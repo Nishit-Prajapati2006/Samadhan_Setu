@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     lateinit var regNo: String
     lateinit var email: String
     lateinit var phone: String
-//    val apiKey = "AIzaSyAbSgjn1g-8-LH5bGwLaS_tDAbJ2lnsbX0" // Replace with your key
+
       val apiKey = BuildConfig.GEMINI_API_KEY
     // --- NEW: Speech Recognizer ---
     private var speechRecognizer: SpeechRecognizer? = null
