@@ -6,6 +6,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 import com.example.samadhansetu.databinding.ItemComplaintPendingBinding
 import com.google.firebase.database.*
@@ -22,6 +23,7 @@ class ItemComplaintPendingActivity : AppCompatActivity() {
     private lateinit var spinnerAdapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ItemComplaintPendingBinding.inflate(layoutInflater)
         setContentView(binding.root)

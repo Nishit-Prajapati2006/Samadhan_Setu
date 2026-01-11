@@ -54,7 +54,8 @@
                         android:id="@+id/etName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName|textCapWords" />
+                        android:inputType="textPersonName|textCapWords"
+                        android:textColor="#050505" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Registration No. Input -->
@@ -69,7 +70,8 @@
                         android:id="@+id/etRegistrationNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:textColor="#000000" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Email Address Input -->
@@ -84,7 +86,8 @@
                         android:id="@+id/etEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000000" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Mobile No. Input -->
@@ -99,7 +102,8 @@
                         android:id="@+id/etMobileNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="phone" />
+                        android:inputType="phone"
+                        android:textColor="#000000" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Room No. Input -->
@@ -115,7 +119,8 @@
                         android:id="@+id/etRoomNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:textColor="#000000" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton
@@ -126,6 +131,7 @@
                     android:backgroundTint="#2563EB"
                     android:text="Finish"
                     android:textAllCaps="false"
+                    android:textColor="#FDFDFD"
                     android:textStyle="bold"
                     app:cornerRadius="14dp" />
 

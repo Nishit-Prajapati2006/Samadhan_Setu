@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.samadhansetu.databinding.ActivityCaretakerProfileBinding
 import com.example.samadhansetu.databinding.ActivityProfileBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -16,6 +17,7 @@ class CaretakerProfile : AppCompatActivity() {
     // We don't need lateinit properties anymore, which makes the code safer.
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ActivityCaretakerProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)

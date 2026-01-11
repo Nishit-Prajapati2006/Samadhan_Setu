@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.samadhansetu.databinding.ActivityCaretakerDashboardBinding
 import com.example.samadhansetu.databinding.ActivityComplaintListBinding
@@ -21,6 +22,7 @@ class ComplaintListActivity : AppCompatActivity() {
     private val oldcomplaints = mutableListOf<AllComplaint>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ActivityComplaintListBinding.inflate(layoutInflater)
         setContentView(binding.root)

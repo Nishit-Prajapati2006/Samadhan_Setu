@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 //import androidx.glance.visibility
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.samadhansetu.databinding.ActivityViewNoticesBinding
@@ -18,6 +19,7 @@ class ViewNoticesActivity : AppCompatActivity() {
     private val noticeList = mutableListOf<Notice>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ActivityViewNoticesBinding.inflate(layoutInflater)
         setContentView(binding.root)

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.samadhansetu.databinding.ActivityStudentInterfaceBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -13,11 +14,13 @@ import kotlin.text.trim
 
 class student_interface : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityStudentInterfaceBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var database: DatabaseReference
     lateinit var sessionManager: SessionManager
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ActivityStudentInterfaceBinding.inflate(layoutInflater)
 

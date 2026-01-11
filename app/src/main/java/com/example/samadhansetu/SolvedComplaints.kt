@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.samadhansetu.databinding.ActivityOngoingComplaintsBinding // Use the new layout binding
 import com.example.samadhansetu.databinding.ActivitySolvedComplaintsBinding
@@ -23,6 +24,7 @@ class SolvedComplaints : AppCompatActivity() {
     private val solvedcomplaintslist = mutableListOf<AllComplaint>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         // Inflate the correct layout
         binding = ActivitySolvedComplaintsBinding.inflate(layoutInflater)

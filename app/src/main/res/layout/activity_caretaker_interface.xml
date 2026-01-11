@@ -55,7 +55,8 @@
                         android:id="@+id/etName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName|textCapWords" />
+                        android:inputType="textPersonName|textCapWords"
+                        android:textColor="#0F0E0E" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -72,7 +73,8 @@
                         android:id="@+id/etEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
+                        android:inputType="textEmailAddress"
+                        android:textColor="#020202" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Mobile No. Input -->
@@ -87,7 +89,8 @@
                         android:id="@+id/etMobileNo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="phone" />
+                        android:inputType="phone"
+                        android:textColor="#090909" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!-- Room No. Input -->
@@ -102,7 +105,8 @@
                         android:id="@+id/etHostel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="text" />
+                        android:inputType="text"
+                        android:textColor="#000000" />
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.button.MaterialButton

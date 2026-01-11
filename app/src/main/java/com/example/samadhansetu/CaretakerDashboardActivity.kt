@@ -7,6 +7,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.GravityCompat
 import com.example.samadhansetu.databinding.ActivityCaretakerDashboardBinding
 import com.google.android.material.navigation.NavigationView
@@ -25,6 +26,7 @@ class CaretakerDashboardActivity : AppCompatActivity(), NavigationView.OnNavigat
     lateinit var phone: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         binding = ActivityCaretakerDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)

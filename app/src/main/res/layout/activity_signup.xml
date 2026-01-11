@@ -45,6 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:text="Sign up ,"
+        android:textColor="#000000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +91,8 @@
                     android:id="@+id/signupemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -106,7 +108,9 @@
                     android:id="@+id/signuppssword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:shadowColor="#000000"
+                    android:textColor="#000000" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
@@ -115,7 +119,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:text="By signing up, you agree to our Terms"
-                android:textColor="#94A3B8"
+                android:textColor="#000000"
                 android:textSize="12sp" />
 
             <com.google.android.material.button.MaterialButton
